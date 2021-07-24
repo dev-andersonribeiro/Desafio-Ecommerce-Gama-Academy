@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon-01.png" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/cadastros.css">
+  <!-- Fonts -->  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/2f26dafcce.js" crossorigin="anonymous"></script>
+
+  <title>Cadastrar Produtos</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/"><img src="./assets/images/logo_dev_skills-01.svg" alt="Logo Dev Skills"></a>
+      <nav>
+        <ul class="menu">
+          
+              <li><a href="#">Cadastro<i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                          <li><a href="/cadastro-cliente.html">Cliente</a></li>
+                          <li><a href="/cadastro-produto.html">Produto</a></li>
+                          
+                   </ul>
+            </li>
+          <li><a href="#newsletter">Cadastre-se</a></li>
+          <li><a href="#contato">Contato</a></li>
+      </ul>
+      </nav>
+      <a href="#cursos" class="button">Super Ofertas</a>
+    </div>
+  </header>
+
+  <section class="form-section">
+    <div class="form-section-container">
+      
+      <div class="form-content-container">
+        <h2>Cadastro de Produto</h2>        
+        <form>
+          <div class="input-container">
+            <input id="nome" class="nome" name="nome" type="text" placeholder="Produto">
+            <input id="codigo-produto" class="codigo-produto" name="codigo-produto" type="text" placeholder="Código do produto">
+            <input id="quantidade" class="quantidade" name="quantidade" type="number" placeholder="Quantidade">
+            <textarea name="descricao" id="descricao" placeholder="Descrição"></textarea>
+          </div>
+          <button onclick="cadastrarProduto()" class="button">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+      
+  </section> 
+
+ 
+
+  <footer id="contato" class="footer">
+    <div class="footer-container">
+      <div class="footer-address">
+        <div class="logo-footer">
+          <a href="/"><img src="./assets/images/logo_dev_skills-01.svg" alt="Logo Dev Skills Footer"></a>
+        </div>
+        <div class="address">
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Av. dos Desenvolvedores 525 - Pq. If Else</li>
+            <li><i class="fas fa-envelope"></i> falecom@devskills.com.br</li>
+            <li><i class="fas fa-phone-square-alt"></i> +55 (19) 99692.6982</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-colum-1">
+        <h5>Carreira</h5>
+        <ul>
+          <a href="#"><li>Trabalhe Conosco</li></a>
+          <a href="#"><li>Teste de Nivelamento</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-colum-2">
+        <h5>Networking</h5>
+        <ul>
+          <a href="#"><li>Contratar</li></a>
+          <a href="#"><li>Feira de contratação</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-colum-3">
+        <h5>Dev Skills</h5>
+        <ul>
+          <a href="#"><li>Sobre nós</li></a>
+          <a href="#"><li>Contato</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-colum-4">
+        <h5>Nossas Redes</h5>
+        <div class="footer-social">            
+          
+            <ul>
+              <a href="https://www.linkedin.com/in/and-ribeiro/" target="_blank"><li><i class="fab fa-linkedin"></i></li></a>
+              <a href="https://github.com/dev-andersonribeiro" target="_blank"><li><i class="fab fa-github-square"></i></li></a>
+              <a href="https://instagram.com/_andribeiro" target="_blank"><li><i class="fab fa-instagram-square" target="_blank"></i></li></a>
+            </ul>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <div class="footer-copy-content">
+          <div class="copy">
+            <span>Copyright &copy; 2021 Dev Skills - Todos os direitos reservados</span>
+          </div>     
+          
+          <div class="developer">
+            <span>Developed by: Anderson Ribeiro</span>
+          </div>         
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+
+<script src="./assets/js/cadastro-produto.js"></script>
+</body>
+</html>

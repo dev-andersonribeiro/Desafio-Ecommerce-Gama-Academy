@@ -1,0 +1,57 @@
+.menu {
+    list-style:none;
+    display: flex;
+}
+
+.menu li{
+    position:relative; 
+    
+    }
+    .menu li a{
+        color:#fff; 
+        text-decoration:none; 
+        padding:10px; 
+        display:inline-block;
+        font-size: 1.5rem;
+    }
+
+.menu li a:hover{
+    color: var(--red);
+    
+   
+    }
+.menu li a i{
+    margin-left: 5px;
+    font-size: 1.3rem; 
+   
+   
+    
+    }
+.menu li a i:hover{
+    transform: rotate(180deg);  
+   
+    
+    }
+
+
+.menu .sub-menu{
+    position:absolute;
+    top:4rem;
+    left:0;
+    background-color:#191919;
+    display:none;
+    transition: ease-in-out 8s;
+   
+    }
+
+    .menu li:hover ul.sub-menu, .menu li.hover ul.sub-menu{
+        display:block;
+
+        
+    }
+
+    .menu li ul.sub-menu li{
+        
+        display:block;
+        width:150px;
+        }
